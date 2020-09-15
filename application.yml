@@ -1,0 +1,29 @@
+proxy:
+  port: 8080
+  authentication: ldap
+  admin-groups: admins
+  users:
+  - name: jack
+    password: password
+    groups: admins
+  - name: jeff
+    password: password
+    # Example: 'ldap' authentication configuration
+  ldap:
+    url: ldap://dc1dc02.aobi.local:636/dc=aobi,dc=local
+    user-dn-pattern: uid={0}
+    group-search-base:
+    #group-search-filter: (uniqueMember={0})
+    manager-dn: cn=temirbek_is,dc=aobi,dc=local
+    manager-password: 3662675Ais
+  docker:
+    url: http://localhost:2375
+  specs:
+  - id: euler
+    display-name: Euler's number
+    description: description
+    container-cmd: ["R", "-e", "shiny::runApp('/root/euler')"]
+    container-image: first-shiny-app
+logging:
+ file:
+   shinyproxy.log
