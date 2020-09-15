@@ -10,6 +10,7 @@ proxy:
     password: password
     # Example: 'ldap' authentication configuration
   ldap:
+    starttls: external
     url: ldap://dc1dc02.aobi.local:636/dc=aobi,dc=local
     user-dn-pattern: uid={0}
     group-search-base:
