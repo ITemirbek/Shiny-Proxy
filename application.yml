@@ -3,8 +3,8 @@ proxy:
   authentication: ldap
   admin-groups: admins
   users:
-  - name: jack
-    password: password
+  - name: temirbek_is
+    password: 3662675Ais
     groups: admins
   - name: jeff
     password: password
@@ -12,19 +12,23 @@ proxy:
   ldap:
     starttls: external
     url: ldap://dc1dc02.aobi.local:636/dc=aobi,dc=local
-    user-dn-pattern: uid={0}
-    group-search-base:
-    #group-search-filter: (uniqueMember={0})
-    manager-dn: cn=temirbek_is,dc=aobi,dc=local
-    manager-password: 3662675Ais
+    manager-dn: svc.pricegen.auth@aobi.local
+    manager-password: OkZpEOnIWJpom$Lg1d
+    # user-dn-pattern: uid={0}
+    user-search-base:
+    user-search-filter: (sAMAccountName={0})
+
+    # group-search-base: OU=BI Group
+    # group-search-filter: (memberOf={0})
+
   docker:
     url: http://localhost:2375
   specs:
-  - id: euler
-    display-name: Euler's number
+  - id: pricegen
+    display-name: Pricegen
     description: description
-    container-cmd: ["R", "-e", "shiny::runApp('/root/euler')"]
-    container-image: first-shiny-app
+    container-cmd: ["R", "-e", "shiny::runApp('/root/pricegen/app.R')"]
+    container-image: pricegen
 logging:
  file:
    shinyproxy.log
