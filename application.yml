@@ -4,13 +4,12 @@ proxy:
   admin-groups: admins
   users:
   - name: temirbek_is
-    password: 3662675Ais
+    password: password
     groups: admins
   - name: jeff
     password: password
     # Example: 'ldap' authentication configuration
   ldap:
-    # starttls: external
     url: ldaps://dc1dc02.aobi.local:636/dc=aobi,dc=local
     manager-dn: svc.pricegen.auth@aobi.local
     manager-password: OkZpEOnIWJpom$Lg1d
