@@ -698,3 +698,148 @@ Caused by: eu.openanalytics.containerproxy.ContainerProxyException: Container di
 2020-09-18 13:58:02.319  INFO 214596 --- [Thread-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
 2020-09-18 13:58:02.321  INFO 214596 --- [Thread-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
 2020-09-18 13:58:02.327  INFO 214596 --- [Thread-2] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-09-18 17:37:21.161  INFO 221435 --- [main] e.o.c.ContainerProxyApplication          : Starting ContainerProxyApplication v0.8.4 on HP-ProBook-450-G5 with PID 221435 (/home/itemirbek/Desktop/Shiny-Proxy/shinyproxy.jar started by itemirbek in /home/itemirbek/Desktop/Shiny-Proxy)
+2020-09-18 17:37:21.165  INFO 221435 --- [main] e.o.c.ContainerProxyApplication          : No active profile set, falling back to default profiles: default
+2020-09-18 17:37:21.241  INFO 221435 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7ac7a4e4: startup date [Fri Sep 18 17:37:21 ALMT 2020]; root of context hierarchy
+2020-09-18 17:37:22.522  INFO 221435 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-09-18 17:37:23.496  INFO 221435 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2020-09-18 17:37:23.515  INFO 221435 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2020-09-18 17:37:23.600  WARN 221435 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2020-09-18 17:37:23.600  WARN 221435 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-09-18 17:37:23.651  INFO 221435 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-09-18 17:37:23.651  INFO 221435 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2410 ms
+2020-09-18 17:37:23.942  INFO 221435 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-18 17:37:23.944  INFO 221435 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-18 17:37:23.944  INFO 221435 --- [main] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2020-09-18 17:37:23.944  INFO 221435 --- [main] o.s.boot.web.servlet.RegistrationBean    : Filter orderedHiddenHttpMethodFilter was not registered (disabled)
+2020-09-18 17:37:23.944  INFO 221435 --- [main] o.s.boot.web.servlet.RegistrationBean    : Filter orderedHttpPutFormContentFilter was not registered (disabled)
+2020-09-18 17:37:23.945  INFO 221435 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-09-18 17:37:24.288  INFO 221435 --- [main] e.o.c.stat.StatCollectorRegistry         : Disabled. Usage statistics will not be processed.
+2020-09-18 17:37:24.443  INFO 221435 --- [main] s.s.l.DefaultSpringSecurityContextSource :  URL 'ldap://dc1dc02.aobi.local:636/dc=aobi,dc=local', root DN is 'dc=aobi,dc=local'
+2020-09-18 17:37:24.500  INFO 221435 --- [main] .s.s.l.u.DefaultLdapAuthoritiesPopulator : groupSearchBase is empty. Searches will be performed from the context source base
+2020-09-18 17:37:24.515  INFO 221435 --- [main] o.s.s.l.s.FilterBasedLdapUserSearch      : SearchBase not set. Searches will be performed from the root: dc=aobi,dc=local
+2020-09-18 17:37:24.710  INFO 221435 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75d3a5e0, org.springframework.security.web.context.SecurityContextPersistenceFilter@6892b3b6, org.springframework.security.web.header.HeaderWriterFilter@1ed4ae0f, org.springframework.security.web.csrf.CsrfFilter@46cdf8bd, org.springframework.security.web.authentication.logout.LogoutFilter@5b1669c0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@202b0582, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@74d1dc36, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76a4ebf2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@449a4f23, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7161d8d1, org.springframework.security.web.session.SessionManagementFilter@6d4d66d2, org.springframework.security.web.access.ExceptionTranslationFilter@f78a47e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@563f38c4]
+2020-09-18 17:37:24.742  WARN 221435 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-09-18 17:37:25.361  INFO 221435 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7ac7a4e4: startup date [Fri Sep 18 17:37:21 ALMT 2020]; root of context hierarchy
+2020-09-18 17:37:25.467  INFO 221435 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/app/*],methods=[GET]}" onto public java.lang.String eu.openanalytics.shinyproxy.controllers.AppController.app(org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest)
+2020-09-18 17:37:25.468  INFO 221435 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/app/*],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.String> eu.openanalytics.shinyproxy.controllers.AppController.startApp(javax.servlet.http.HttpServletRequest)
+2020-09-18 17:37:25.468  INFO 221435 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/app_direct/**]}" onto public void eu.openanalytics.shinyproxy.controllers.AppController.appDirect(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-18 17:37:25.469  INFO 221435 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/issue],methods=[POST]}" onto public java.lang.String eu.openanalytics.shinyproxy.controllers.IssueController.postIssue(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-18 17:37:25.470  INFO 221435 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin]}" onto private java.lang.String eu.openanalytics.shinyproxy.controllers.AdminController.admin(org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest)
+2020-09-18 17:37:25.471  INFO 221435 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto private java.lang.Object eu.openanalytics.shinyproxy.controllers.IndexController.index(org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest)
+2020-09-18 17:37:25.473  INFO 221435 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/proxy/{proxyId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<eu.openanalytics.containerproxy.model.runtime.Proxy> eu.openanalytics.containerproxy.api.ProxyController.getProxy(java.lang.String)
+2020-09-18 17:37:25.474  INFO 221435 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/proxyspec/{proxySpecId}],methods=[GET],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<eu.openanalytics.containerproxy.model.spec.ProxySpec> eu.openanalytics.containerproxy.api.ProxyController.getProxySpec(java.lang.String)
+2020-09-18 17:37:25.474  INFO 221435 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/proxy/{proxySpecId}],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<eu.openanalytics.containerproxy.model.runtime.Proxy> eu.openanalytics.containerproxy.api.ProxyController.startProxy(java.lang.String,java.util.Set<eu.openanalytics.containerproxy.model.runtime.RuntimeSetting>)
+2020-09-18 17:37:25.475  INFO 221435 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/proxy],methods=[POST],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<eu.openanalytics.containerproxy.model.runtime.Proxy> eu.openanalytics.containerproxy.api.ProxyController.startProxy(eu.openanalytics.containerproxy.model.spec.ProxySpec)
+2020-09-18 17:37:25.475  INFO 221435 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/proxy/{proxyId}],methods=[DELETE],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.String> eu.openanalytics.containerproxy.api.ProxyController.stopProxy(java.lang.String)
+2020-09-18 17:37:25.476  INFO 221435 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/proxy],methods=[GET],produces=[application/json]}" onto public java.util.List<eu.openanalytics.containerproxy.model.runtime.Proxy> eu.openanalytics.containerproxy.api.ProxyController.listProxies()
+2020-09-18 17:37:25.476  INFO 221435 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/proxyspec],methods=[GET],produces=[application/json]}" onto public java.util.List<eu.openanalytics.containerproxy.model.spec.ProxySpec> eu.openanalytics.containerproxy.api.ProxyController.listProxySpecs()
+2020-09-18 17:37:25.477  INFO 221435 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/route/**]}" onto public void eu.openanalytics.containerproxy.api.ProxyRouteController.route(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-18 17:37:25.481  INFO 221435 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public java.lang.String eu.openanalytics.containerproxy.ui.ErrorController.handleError(org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-18 17:37:25.482  INFO 221435 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],consumes=[application/json],produces=[application/json]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> eu.openanalytics.containerproxy.ui.ErrorController.error(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-18 17:37:25.483  INFO 221435 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.Object eu.openanalytics.containerproxy.ui.LoginController.getLoginPage(java.util.Optional<java.lang.String>,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest)
+2020-09-18 17:37:25.559  INFO 221435 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/assets/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-18 17:37:25.559  INFO 221435 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-18 17:37:25.559  INFO 221435 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-18 17:37:25.580  INFO 221435 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in baseController.RestErrorHandler
+2020-09-18 17:37:25.630  INFO 221435 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-18 17:37:25.774  INFO 221435 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-18 17:37:25.877  INFO 221435 --- [main] o.s.l.c.support.AbstractContextSource    : Property 'userDn' not set - anonymous context will be used for read-write operations
+2020-09-18 17:37:26.076  INFO 221435 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-09-18 17:37:26.077  INFO 221435 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-09-18 17:37:26.084  INFO 221435 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-09-18 17:37:26.189  INFO 221435 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8080 (http) with context path ''
+2020-09-18 17:37:26.194  INFO 221435 --- [main] e.o.c.ContainerProxyApplication          : Started ContainerProxyApplication in 5.648 seconds (JVM running for 6.319)
+2020-09-18 17:37:37.304  INFO 221435 --- [XNIO-2 task-1] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-09-18 17:37:37.304  INFO 221435 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-09-18 17:37:37.329  INFO 221435 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2020-09-18 17:37:47.883 ERROR 221435 --- [XNIO-2 task-7] w.a.UsernamePasswordAuthenticationFilter : An internal error occurred while trying to authenticate the user.
+
+org.springframework.security.authentication.InternalAuthenticationServiceException: Uncategorized exception occured during LDAP processing; nested exception is javax.naming.NamingException: LDAP response read timed out, timeout used:-1ms.
+	at org.springframework.security.ldap.authentication.LdapAuthenticationProvider.doAuthentication(LdapAuthenticationProvider.java:206) ~[spring-security-ldap-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.security.ldap.authentication.AbstractLdapAuthenticationProvider.authenticate(AbstractLdapAuthenticationProvider.java:85) ~[spring-security-ldap-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174) ~[spring-security-core-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199) ~[spring-security-core-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.attemptAuthentication(UsernamePasswordAuthenticationFilter.java:94) ~[spring-security-web-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) ~[spring-security-web-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:124) [spring-security-web-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66) [spring-security-web-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) [spring-security-web-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) [spring-security-web-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) [spring-security-web-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.4.RELEASE.jar!/:5.0.4.RELEASE]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:64) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.server.handlers.PathHandler.handleRequest(PathHandler.java:94) [undertow-core-1.4.22.Final.jar!/:1.4.22.Final]
+	at eu.openanalytics.containerproxy.util.ProxyMappingManager$ProxyPathHandler.handleRequest(ProxyMappingManager.java:159) [containerproxy-0.8.4.jar!/:0.8.4]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46) [undertow-core-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60) [undertow-core-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43) [undertow-core-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104) [undertow-servlet-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:336) [undertow-core-1.4.22.Final.jar!/:1.4.22.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830) [undertow-core-1.4.22.Final.jar!/:1.4.22.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_265]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_265]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_265]
+Caused by: org.springframework.ldap.UncategorizedLdapException: Uncategorized exception occured during LDAP processing; nested exception is javax.naming.NamingException: LDAP response read timed out, timeout used:-1ms.
+	at org.springframework.ldap.support.LdapUtils.convertLdapException(LdapUtils.java:228) ~[spring-ldap-core-2.3.2.RELEASE.jar!/:2.3.2.RELEASE]
+	at org.springframework.ldap.core.support.AbstractContextSource.doGetContext(AbstractContextSource.java:147) ~[spring-ldap-core-2.3.2.RELEASE.jar!/:2.3.2.RELEASE]
+	at org.springframework.ldap.core.support.AbstractContextSource.getReadOnlyContext(AbstractContextSource.java:158) ~[spring-ldap-core-2.3.2.RELEASE.jar!/:2.3.2.RELEASE]
+	at org.springframework.ldap.core.LdapTemplate.executeReadOnly(LdapTemplate.java:802) ~[spring-ldap-core-2.3.2.RELEASE.jar!/:2.3.2.RELEASE]
+	at org.springframework.security.ldap.SpringSecurityLdapTemplate.searchForSingleEntry(SpringSecurityLdapTemplate.java:316) ~[spring-security-ldap-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.security.ldap.search.FilterBasedLdapUserSearch.searchForUser(FilterBasedLdapUserSearch.java:128) ~[spring-security-ldap-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.security.ldap.authentication.BindAuthenticator.authenticate(BindAuthenticator.java:95) ~[spring-security-ldap-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	at org.springframework.security.ldap.authentication.LdapAuthenticationProvider.doAuthentication(LdapAuthenticationProvider.java:187) ~[spring-security-ldap-5.0.3.RELEASE.jar!/:5.0.3.RELEASE]
+	... 63 common frames omitted
+Caused by: javax.naming.NamingException: LDAP response read timed out, timeout used:-1ms.
+	at com.sun.jndi.ldap.Connection.readReply(Connection.java:469) ~[na:1.8.0_265]
+	at com.sun.jndi.ldap.LdapClient.extendedOp(LdapClient.java:1199) ~[na:1.8.0_265]
+	at com.sun.jndi.ldap.LdapCtx.extendedOperation(LdapCtx.java:3274) ~[na:1.8.0_265]
+	at javax.naming.ldap.InitialLdapContext.extendedOperation(InitialLdapContext.java:184) ~[na:1.8.0_265]
+	at org.springframework.ldap.core.support.AbstractTlsDirContextAuthenticationStrategy.processContextAfterCreation(AbstractTlsDirContextAuthenticationStrategy.java:131) ~[spring-ldap-core-2.3.2.RELEASE.jar!/:2.3.2.RELEASE]
+	at org.springframework.ldap.core.support.AbstractContextSource.doGetContext(AbstractContextSource.java:142) ~[spring-ldap-core-2.3.2.RELEASE.jar!/:2.3.2.RELEASE]
+	... 69 common frames omitted
+
+2020-09-18 17:38:03.781  INFO 221435 --- [Thread-2] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7ac7a4e4: startup date [Fri Sep 18 17:37:21 ALMT 2020]; root of context hierarchy
+2020-09-18 17:38:03.815  INFO 221435 --- [Thread-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-09-18 17:38:03.816  INFO 221435 --- [Thread-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2020-09-18 17:38:03.824  INFO 221435 --- [Thread-2] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'

@@ -10,8 +10,8 @@ proxy:
     password: password
     # Example: 'ldap' authentication configuration
   ldap:
-    starttls: external
-    url: ldap://dc1dc02.aobi.local:636/dc=aobi,dc=local
+    # starttls: external
+    url: ldaps://dc1dc02.aobi.local:636/dc=aobi,dc=local
     manager-dn: svc.pricegen.auth@aobi.local
     manager-password: OkZpEOnIWJpom$Lg1d
     # user-dn-pattern: uid={0}
