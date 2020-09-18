@@ -23,11 +23,11 @@ proxy:
   docker:
     url: http://localhost:2375
   specs:
-  - id: pricegen
-    display-name: Pricegen
+  - id: euler
+    display-name: Euler's number
     description: description
-    container-cmd: ["R", "-e", "shiny::runApp('/root/pricegen/app.R')"]
-    container-image: pricegen
+    container-cmd: ["R", "-e", "shiny::runApp('/root/euler')"]
+    container-image: first-shiny-app
 logging:
  file:
    shinyproxy.log
